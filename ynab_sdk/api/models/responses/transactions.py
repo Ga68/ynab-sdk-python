@@ -50,7 +50,7 @@ class Transaction:
     account_id: str
     payee_id: Optional[str]
     category_id: Optional[str]
-    transfer_account_id: str
+    transfer_account_id: Optional[str]
     transfer_transaction_id: Optional[str]
     matched_transaction_id: Optional[str]
     import_id: Optional[str]
