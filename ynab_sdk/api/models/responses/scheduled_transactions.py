@@ -109,10 +109,10 @@ class Data:
     def from_dict(obj: Any) -> "Data":
         assert isinstance(obj, dict)
         scheduled_transactions = parsers.from_list(
-            Transaction.from_dict, obj.get("scheduled_transactions")
+            ScheduledTransaction.from_dict, obj.get("scheduled_transactions")
         )
         server_knowledge = parsers.from_int(obj.get("server_knowledge"))
-        return Data(transactions, server_knowledge)
+        return Data(scheduled_transactions, server_knowledge)
 
 
 @dataclass
