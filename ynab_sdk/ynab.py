@@ -2,6 +2,7 @@ from ynab_sdk.api.accounts import AccountsApi
 from ynab_sdk.api.budgets import BudgetsApi
 from ynab_sdk.api.categories import CategoriesApi
 from ynab_sdk.api.payees import PayeeApi
+from ynab_sdk.api.scheduled_transactions import ScheduledTransactionsApi
 from ynab_sdk.api.transactions import TransactionsApi
 from ynab_sdk.utils.clients.base_client import BaseClient
 from ynab_sdk.utils.clients.default_client import DefaultClient
@@ -37,3 +38,7 @@ class YNAB:
     @property
     def transactions(self):
         return TransactionsApi(self.client)
+
+    @property
+    def scheduled_transactions(self):
+        return ScheduledTransactionsApi(self.client)
