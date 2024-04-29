@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/andreroggeri/ynab-sdk-python/branch/main/graph/badge.svg)](https://codecov.io/gh/andreroggeri/ynab-sdk-python)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Python implementation of the YNAB API ([https://api.youneedabudget.com/](https://api.youneedabudget.com/))
+Python implementation of the YNAB API ([https://api.ynab.com/](https://api.ynab.com/))
 
 ## Installation
 
